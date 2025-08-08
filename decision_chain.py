@@ -8,7 +8,7 @@ api_key = st.secrets["API_KEY"]
 def get_decision_chain():
     llm = ChatOpenAI(
         model="llama-3.3-70b-versatile",
-        api_key=os.getenv("API_KEY"),
+        api_key=api_key,
         base_url="https://api.groq.com/openai/v1",
         temperature=0.2,
         max_tokens=512
@@ -31,6 +31,7 @@ def get_decision_chain():
     ])
 
     return prompt | llm
+
 
 
 
