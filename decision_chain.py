@@ -1,9 +1,9 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 import os
-from dotenv import load_dotenv
+import streamlit as st
+api_key = st.secrets["API_KEY"]
 
-load_dotenv()
 
 def get_decision_chain():
     llm = ChatOpenAI(
@@ -31,5 +31,6 @@ def get_decision_chain():
     ])
 
     return prompt | llm
+
 
 
