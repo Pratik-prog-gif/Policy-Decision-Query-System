@@ -4,9 +4,9 @@ from model_handler import load_and_process_document, get_relevant_chunks
 from decision_chain import get_decision_chain
 from pydantic import BaseModel
 import os
-from dotenv import load_dotenv
+import streamlit as st
+api_key = st.secrets["API_KEY"]
 
-load_dotenv()
 
 app = FastAPI()
 vectorstore = None
@@ -42,3 +42,4 @@ async def query_doc(input: QueryInput):
         return {"response": response.content, "matched_clauses": [doc.page_content for doc in docs]}
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
+
