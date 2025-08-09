@@ -14,7 +14,7 @@ if uploaded_file:
         files = {
             "file": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)
         }
-        res = requests.post("https://policy-decision-making-backend-5.onrender.com/upload", files=files)
+        res = requests.post("https://policy-decision-making-backend-7.onrender.com/upload", files=files)
 
         if res.status_code == 200:
             st.success(res.json().get("message", "Upload successful!"))
@@ -28,7 +28,7 @@ user_query = st.text_input("What would you like to ask about this document?")
 if st.button(" Submit Query") and user_query:
     with st.spinner("Querying LLM..."):
         res = requests.post(
-            "https://policy-decision-making-backend-5.onrender.com/query",
+            "https://policy-decision-making-backend-7.onrender.com/query",
             json={"question": user_query}
         )
 
@@ -46,5 +46,6 @@ if st.button(" Submit Query") and user_query:
 
         else:
             st.error(f"❌ Query failed: {res.json().get('error', 'Unknown error')}")
+
 
 
