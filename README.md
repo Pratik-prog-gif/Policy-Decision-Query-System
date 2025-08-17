@@ -68,11 +68,8 @@ _After uploading, use this to query the document with a policy-related question.
  uvicorn main:app --host 0.0.0.0 --port 8000
 ```
  5. **Access Swagger UI**
-    Navigate to:
     ```bash
      http://localhost:8000/docs
    ```
-
-
 
 
