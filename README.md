@@ -1,4 +1,4 @@
-# 🧠 Policy Decision Query System
+#  Policy Decision Query System
 
 A FastAPI-based intelligent query system that analyzes **policy documents** (PDFs, DOCX, Emails) using **LLMs** and **semantic search**. It answers queries like **approval status**, **amount**, and **justification**, based on content in the uploaded document.
 
@@ -48,5 +48,11 @@ _After uploading, use this to query the document with a policy-related question.
 
 ---
 
-##  Folder Structure
+##  Setup Instruction
+ 1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/policy-decision-query-system.git
+   cd policy-decision-query-system
+
+
 
