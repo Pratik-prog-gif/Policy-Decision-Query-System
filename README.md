@@ -53,21 +53,11 @@ _After uploading, use this to query the document with a policy-related question.
    ```bash
    git clone https://github.com/Pratik-prog-gif/Policy-Decision-Query-System.git
    cd policy-decision-query-system
+
    exit
+
    
-2. **Install Dependecies:**
-   ```bash
-   pip install -r requirements.txt
 
-3. **Add API_KEY:**
-   ```bash
-   API_KEY=your_groq_api_key
-
-4. **Run the FastAPI server:**
-   ```bash
-   uvicorn main:app --host 0.0.0.0 --port 8000
-5. **Access Swagger UI**
-   Navigate to: http://localhost:8000/docs
 
 
 
