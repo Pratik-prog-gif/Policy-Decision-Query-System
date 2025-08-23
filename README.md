@@ -19,19 +19,10 @@ A FastAPI-based intelligent query system that analyzes **policy documents** (PDF
 
 ###  File Upload Endpoint
 
-_Use this endpoint to upload a policy document (PDF, DOCX, or EML)._
 
-📷 _Insert screenshot here_  
-`![Swagger Upload Screenshot](images/swagger_upload.png)`
-
----
 
 ### Query Endpoint
 
-_After uploading, use this to query the document with a policy-related question._
-
-📷 _Insert screenshot here_  
-`![Swagger Query Screenshot](images/swagger_query.png)`
 
 ---
 
